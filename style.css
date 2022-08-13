@@ -1,0 +1,184 @@
+@font-face {
+  font-family: "Clearface";
+  src: url("/fonts/ITC-Clearface-Std-Heavy.otf");
+}
+@font-face {
+  font-family: "Modern Sans";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Modern Sans"), url("/fonts/Modern-Sans-400.ttf") format("ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-family: "Clearface", sans-serif;
+  font-size: 42px;
+  margin-bottom: 35px;
+}
+
+h3 {
+  font-family: "Clearface", sans-serif;
+  font-size: 30px;
+}
+
+p {
+  font-family: "Arial", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #2b2c2c;
+}
+
+img .arrow {
+  width: 16px;
+  height: 17.05px;
+  border: 5px solid #6E98AA;
+}
+
+header {
+  width: 100%;
+  height: 550px;
+  background-image: url("/img/painting-art-express.jpg");
+  background-size: cover;
+}
+header .titulo {
+  margin: auto;
+  max-width: 1050px;
+  padding: 100px 5px 100px 5px;
+}
+header .titulo p {
+  margin-top: 15px;
+  font-family: "Modern Sans", sans-serif;
+  font-size: 30px;
+  color: #605E5E;
+}
+header h1 {
+  font-family: "Clearface", sans-serif;
+  font-size: 52px;
+  color: #605E5E;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  font-family: "Clearface", sans-serif;
+  font-weight: 900;
+  padding: 12px;
+  border-bottom: 1px solid #ccc;
+}
+.logo a {
+  color: #6E98AA;
+  font-size: 22pt;
+  font-style: "Arial", sans-serif;
+}
+
+nav {
+  margin: auto;
+  padding: 25px;
+  max-width: 1050px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Arial", sans-serif;
+  list-style: none;
+}
+nav ul a {
+  color: #2b2c2c;
+}
+
+section {
+  margin: auto;
+  max-width: 1050px;
+  padding: 60px 5px 60px 5px;
+  position: relative;
+}
+
+.cifras small {
+  padding: 0px 0px 30px;
+}
+
+.decoration {
+  top: 120px;
+  width: 70px;
+  background-color: #6E98AA;
+  position: absolute;
+  height: 7px;
+}
+
+.tabla {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  margin: auto;
+  margin-bottom: 50px;
+  max-width: 630px;
+}
+
+.value {
+  font-family: "Clearface", sans-serif;
+  font-size: 54px;
+  color: #6E98AA;
+  border-bottom: 1px solid #605E5E;
+}
+
+.item {
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  color: #605E5E;
+  font-size: 16px;
+  margin: 16px 0px 0px;
+}
+
+.background {
+  background-color: #2b2c2c;
+}
+
+.noticias {
+  color: #FFF;
+}
+.noticias container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.noticias .wrapper > div a {
+  text-decoration: none;
+  color: #ccc;
+}
+.noticias .wrapper > div a:visited {
+  color: #6E98AA;
+}
+.noticias .img-container {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.noticias .img-noticias {
+  width: 690px;
+  height: 273px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.noticias h3 {
+  min-width: 50%;
+}
+
+.wrapper {
+  display: flex;
+  min-height: 190px;
+}
+
+.wrapper > div {
+  flex: 1;
+}
+.wrapper > div p {
+  font-size: 17px;
+}/*# sourceMappingURL=style.css.map */
