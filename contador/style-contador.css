@@ -1,0 +1,26 @@
+body{
+    margin:0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor{
+    height:155px;
+    width:320px;
+    position: relative;
+}
+
+.color_fondo{
+    height:0;
+    width:100%;
+    background-color: blue;
+
+}
+
+.numero{
+    height:100%;
+    width:100%; 
+    position: absolute;
+    mix-blend-mode: screen;
+}

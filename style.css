@@ -3,10 +3,10 @@
   src: url("/fonts/ITC-Clearface-Std-Heavy.otf");
 }
 @font-face {
-  font-family: "Modern Sans";
+  font-family: "Poppins";
   font-style: normal;
   font-weight: normal;
-  src: local("Modern Sans"), url("/fonts/Modern-Sans-400.ttf") format("ttf");
+  src: url("/fonts/Poppins-Regular.ttf");
 }
 * {
   margin: 0;
@@ -31,37 +31,27 @@ p {
 
 a {
   text-decoration: none;
-  color: #2b2c2c;
-  margin: 8px 0px 0px;
-}
-
-img .arrow {
-  width: 16px;
-  height: 17.05px;
-  border: 5px solid #6E98AA;
 }
 
 header {
-  width: 100%;
   height: 550px;
-  background-image: url("/img/painting-art-express.jpg");
+  background-image: url("/img/frida-kahlo-painting.jpg");
   background-size: cover;
+  color: #2b2c2c;
 }
 header .titulo {
   margin: auto;
-  max-width: 1050px;
+  max-width: 900px;
   padding: 100px 5px 100px 5px;
 }
 header .titulo p {
   margin-top: 15px;
-  font-family: "Modern Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 30px;
-  color: #605E5E;
 }
 header h1 {
   font-family: "Clearface", sans-serif;
   font-size: 52px;
-  color: #605E5E;
 }
 
 .logo {
@@ -81,7 +71,7 @@ header h1 {
 nav {
   margin: auto;
   padding: 25px;
-  max-width: 1050px;
+  max-width: 900px;
 }
 nav ul {
   display: flex;
@@ -95,7 +85,7 @@ nav ul a {
 
 section {
   margin: auto;
-  max-width: 1050px;
+  max-width: 900px;
   padding: 60px 5px 60px 5px;
   position: relative;
 }
@@ -138,45 +128,71 @@ section {
   margin: 16px 0px 0px;
 }
 
+/* On screens that are 600px wide or less */
+@media screen and (max-width: 600px) {
+  nav {
+    display: none;
+  }
+  header {
+    color: #605E5E;
+  }
+  header h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .decoration {
+    top: 100px;
+  }
+  .value {
+    font-size: 35px;
+  }
+}
+@media screen and (min-width: 601px) {
+  /*NOTICIAS*/
+  .container > div:nth-child(2) {
+    order: 4;
+    margin: auto;
+  }
+  .container > div:nth-child(3) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 25px;
+  }
+  p {
+    line-height: 25px;
+  }
+}
+/*NOTICIAS*/
 .background {
   background-color: #2b2c2c;
+  color: white;
 }
 
-.noticias {
-  color: #FFF;
-}
-.noticias container {
+.container {
+  max-width: 850px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 }
-.noticias .wrapper {
-  display: flex;
-  min-height: 190px;
+
+.container img {
+  width: 100%;
+  max-width: 590px;
 }
-.noticias .wrapper > div {
-  flex: 1;
-}
-.noticias .wrapper > div p {
-  font-size: 17px;
-}
-.noticias .wrapper > div p a {
-  text-decoration: none;
+
+.masInfo a {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
   color: #FFF;
+  padding: 5px 0px;
 }
-.noticias .wrapper > div p a:visited {
-  color: #6E98AA;
-}
-.noticias .wrapper > div h3 {
-  min-width: 50%;
-}
-.noticias .img-container {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-}
-.noticias .img-noticias {
-  -o-object-fit: fill;
-     object-fit: fill;
-  max-height: 292px;
+.masInfo a img {
+  width: 14px;
 }/*# sourceMappingURL=style.css.map */
