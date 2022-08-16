@@ -1,3 +1,172 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Clearface";
+  src: url("/fonts/ITC-Clearface-Std-Heavy.otf");
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/Poppins-Regular.ttf");
+}
+/* menu */
+#menu {
+  max-width: 1050px;
+  margin: auto;
+}
+
+#menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* items del menu */
+/* 
+ #menu ul li {
+
+ }
+
+ /* enlaces del menu */
+#menu ul a {
+  display: block;
+  color: #FFF;
+  text-decoration: none;
+  font-weight: 400;
+  padding: 10px;
+  font-family: "Arial", sans-serif;
+}
+
+#menu ul ul a {
+  color: #2b2c2c;
+}
+
+/* items del menu */
+#menu ul li {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 10px;
+}
+
+#menu ul ul li {
+  font-size: 16px;
+}
+
+/* efecto al pasar el ratón por los items del menu */
+#menu ul ul li:hover {
+  transition: 1s;
+  background-color: #6E98AA;
+  color: #2b2c2c;
+}
+
+/* menu desplegable */
+#menu ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #FFF;
+  padding: 0;
+  box-shadow: 1px 1px 4px #ccc;
+}
+
+/* items del menu desplegable */
+#menu ul ul li {
+  float: none;
+  width: 190px;
+}
+
+/* enlaces de los items del menu desplegable */
+#menu ul ul a {
+  line-height: 120%;
+  padding: 10px 15px;
+}
+
+/* items del menu desplegable al pasar el ratón */
+#menu ul li:hover > ul {
+  display: block;
+}
+
+/* menu 2 */
+#menu-2 {
+  max-width: 1050px;
+  margin: auto;
+}
+
+#menu-2 ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* items del menu */
+/* 
+ #menu ul li {
+
+ }
+
+ /* enlaces del menu */
+#menu-2 ul a {
+  display: block;
+  color: #2b2c2c;
+  text-decoration: none;
+  font-weight: 400;
+  padding: 10px;
+  font-family: "Arial", sans-serif;
+}
+
+#menu-2 ul ul a {
+  color: #2b2c2c;
+}
+
+/* items del menu */
+#menu-2 ul li {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 10px;
+}
+
+#menu-2 ul ul li {
+  font-size: 16px;
+}
+
+/* efecto al pasar el ratón por los items del menu */
+#menu-2 ul ul li:hover {
+  transition: 1s;
+  background-color: #6E98AA;
+  color: #2b2c2c;
+}
+
+/* menu desplegable */
+#menu-2 ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #FFF;
+  padding: 0;
+  box-shadow: 1px 1px 4px #ccc;
+}
+
+/* items del menu desplegable */
+#menu-2 ul ul li {
+  float: none;
+  width: 190px;
+}
+
+/* enlaces de los items del menu desplegable */
+#menu-2 ul ul a {
+  line-height: 120%;
+  padding: 10px 15px;
+}
+
+/* items del menu desplegable al pasar el ratón */
+#menu-2 ul li:hover > ul {
+  display: block;
+}
+
 @font-face {
   font-family: "Clearface";
   src: url("/fonts/ITC-Clearface-Std-Heavy.otf");
@@ -16,13 +185,18 @@
 
 h2 {
   font-family: "Clearface", sans-serif;
-  font-size: 42px;
+  font-size: 51px;
   margin-bottom: 35px;
 }
 
 h3 {
   font-family: "Clearface", sans-serif;
-  font-size: 30px;
+  font-size: 38px;
+}
+
+h4 {
+  font-family: "Clearface", sans-serif;
+  font-size: 28px;
 }
 
 p {
@@ -33,25 +207,92 @@ a {
   text-decoration: none;
 }
 
-header {
-  height: 550px;
-  background-image: url("/img/frida-kahlo-painting.jpg");
+.header-seccion {
+  height: 354px;
+  padding: 0px 0px 16px;
+  background-image: url("img/arte/Perros_en_trailla-header2.jpg");
   background-size: cover;
-  color: #2b2c2c;
 }
-header .titulo {
+
+@media screen and (max-width: 951px) {
+  #menu-2 {
+    display: none;
+  }
+  .logo-header {
+    display: none;
+  }
+}
+.logo-header {
+  font-family: "Clearface", sans-serif;
+  font-weight: 900;
+  padding: 12px;
+  border-bottom: 1px solid #ccc;
+}
+.logo-header a {
+  color: #6E98AA;
+  font-size: 32pt;
+  font-style: "Arial", sans-serif;
+}
+
+@font-face {
+  font-family: "Clearface";
+  src: url("/fonts/ITC-Clearface-Std-Heavy.otf");
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/Poppins-Regular.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-family: "Clearface", sans-serif;
+  font-size: 51px;
+  margin-bottom: 35px;
+}
+
+h3 {
+  font-family: "Clearface", sans-serif;
+  font-size: 38px;
+}
+
+h4 {
+  font-family: "Clearface", sans-serif;
+  font-size: 28px;
+}
+
+p {
+  font-family: "Arial", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.index {
+  height: 700px;
+  background-image: url("/img/arte/Maja_vestida_Prado.jpg");
+  background-size: cover;
+  color: #FFF;
+}
+.index .titulo {
   margin: auto;
-  max-width: 900px;
+  max-width: 1050px;
   padding: 100px 5px 100px 5px;
 }
-header .titulo p {
+.index .titulo p {
   margin-top: 15px;
   font-family: "Poppins", sans-serif;
-  font-size: 30px;
+  font-size: 38px;
 }
-header h1 {
+.index h1 {
   font-family: "Clearface", sans-serif;
-  font-size: 52px;
+  font-size: 64px;
 }
 
 .logo {
@@ -64,34 +305,23 @@ header h1 {
 }
 .logo a {
   color: #6E98AA;
-  font-size: 22pt;
+  font-size: 32pt;
   font-style: "Arial", sans-serif;
-}
-
-nav {
-  margin: auto;
-  padding: 25px;
-  max-width: 900px;
-}
-nav ul {
-  display: flex;
-  justify-content: space-around;
-  font-family: "Arial", sans-serif;
-  list-style: none;
-}
-nav ul a {
-  color: #2b2c2c;
 }
 
 section {
   margin: auto;
-  max-width: 900px;
+  max-width: 1050px;
   padding: 60px 5px 60px 5px;
   position: relative;
 }
 
 .cifras small {
   padding: 0px 0px 30px;
+}
+
+.cifras-titulo, .servicios-titulo {
+  color: #2b2c2c;
 }
 
 .decoration {
@@ -110,12 +340,12 @@ section {
   grid-row-gap: 15px;
   margin: auto;
   margin-bottom: 50px;
-  max-width: 630px;
+  max-width: 693px;
 }
 
 .value {
   font-family: "Clearface", sans-serif;
-  font-size: 54px;
+  font-size: 72px;
   color: #6E98AA;
   border-bottom: 1px solid #605E5E;
 }
@@ -128,19 +358,18 @@ section {
   margin: 16px 0px 0px;
 }
 
-/* On screens that are 600px wide or less */
-@media screen and (max-width: 600px) {
-  nav {
+@media screen and (max-width: 951px) {
+  #menu {
     display: none;
   }
   header {
     color: #605E5E;
   }
   header h1 {
-    font-size: 40px;
+    font-size: 48px;
   }
   h2 {
-    font-size: 32px;
+    font-size: 34px;
   }
   h3 {
     font-size: 25px;
@@ -154,8 +383,12 @@ section {
   .value {
     font-size: 35px;
   }
+  a {
+    font-size: 14px;
+  }
 }
-@media screen and (min-width: 601px) {
+/* On screens that are 690px wide or less */
+@media screen and (min-width: 950px) {
   /*NOTICIAS*/
   .container > div:nth-child(2) {
     order: 4;
@@ -169,6 +402,7 @@ section {
   p {
     line-height: 25px;
   }
+  /*NUESTROS SERVICIOS responsive*/
 }
 /*NOTICIAS*/
 .background {
@@ -177,22 +411,123 @@ section {
 }
 
 .container {
-  max-width: 850px;
+  max-width: 1050px;
   display: flex;
   flex-direction: column;
 }
 
-.container img {
-  width: 100%;
-  max-width: 590px;
+.container div:nth-child(2) {
+  margin: auto;
 }
 
+.container img {
+  width: 100%;
+  max-width: 690px;
+}
+
+.masInfo .negro {
+  color: #2b2c2c;
+}
 .masInfo a {
   font-family: "Arial", sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   color: #FFF;
   padding: 5px 0px;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+  color: #FFF;
 }
 .masInfo a img {
   width: 14px;
+}
+.masInfo a:hover, .masInfo a:focus {
+  background-size: 100% 2px;
+}
+
+.container-servicios {
+  max-width: 1050px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-servicios img {
+  width: 100%;
+  max-width: 689px;
+}
+
+article {
+  margin: 10px 0px;
+}
+article img {
+  max-height: 250px;
+  max-width: 590px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+article h4 {
+  margin: 5px 0px;
+  color: #2b2c2c;
+}
+article div {
+  margin-top: 5px;
+}
+article div a {
+  padding: 5px 0px;
+}
+
+@media screen and (min-width: 690px) {
+  .container-servicios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 0px;
+  }
+}
+.logo-footer {
+  font-family: "Clearface", sans-serif;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.contenido div {
+  padding: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-family: "Arial";
+  font-weight: bold;
+  font-size: 17px;
+}
+footer li a {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+}
+footer li {
+  font-family: "Arial", sans-serif;
+  margin: 10px 0px;
+}
+footer ul {
+  list-style: none;
+}
+
+@media screen and (min-width: 690px) {
+  .footer {
+    max-width: 1050px;
+    margin: auto;
+  }
+  .contenido {
+    display: flex;
+    justify-content: space-around;
+  }
+  .contenido div {
+    flex: 1;
+    margin: 0px 5px;
+  }
 }/*# sourceMappingURL=style.css.map */

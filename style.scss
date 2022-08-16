@@ -1,3 +1,7 @@
+@use 'navbar';
+@use 'secciones';
+
+
 //colores
 $color-negro:#2b2c2c;
 $otro-negro:#605E5E;
@@ -22,13 +26,16 @@ $texto-normal:'Arial', sans-serif;
     }
 
 //tamaño de fonts
-$size-h1: 52px;
-$size-h2: 42px;
-$size-numeros: 52px;
-$size-h3: 30px;
+$size-h1: 64px;
+$size-h2: 51px;
+$size-numeros: 72px;
+$size-h3: 38px;
+$size-h4: 28px;
+$size-textonormal: 16px;
+$p-header: 38px;
 
 //tamaños
-$max-width: 900px;
+$max-width: 1050px;
 
 
 *{
@@ -51,6 +58,11 @@ h3{
     font-size: $size-h3;
     }
 
+h4{
+    font-family: $titulo-serif;
+    font-size: $size-h4;
+}
+
 p{
     font-family: $texto-normal;
 
@@ -64,11 +76,11 @@ text-decoration: none;
 //Header
 
 
-header{
-    height: 550px;
-    background-image: url("/img/frida-kahlo-painting.jpg");
+.index {
+    height: 700px;
+    background-image: url("/img/arte/Maja_vestida_Prado.jpg");
     background-size:cover;
-    color: $color-negro;  
+    color: $color-blanco;  
 
     .titulo{
     margin:auto;        
@@ -77,7 +89,7 @@ header{
     p{
         margin-top: 15px;
     font-family: $subtitulo;   
-    font-size: 30px;   
+    font-size: $p-header;   
     }
 }
     h1{
@@ -96,32 +108,11 @@ header{
     border-bottom: 1px solid #ccc;
   a{
       color: $color-primario;
-    font-size: 22pt;
+    font-size: 32pt;
     font-style: $texto-normal;
   }
 }
 
-
-
-//NAV-BAR
-
-nav{
-    margin:auto;
-    padding: 25px;
-    max-width: $max-width;
-    ul{
-        display:flex;
-        justify-content:space-around ;
-        font-family: $texto-normal;
-        list-style: none;
-        a{
-        color: $color-negro;
-    
-         }
-
-    }
- }
- 
 
 
 //SECTIONS
@@ -138,6 +129,10 @@ section{
         small{
             padding: 0px 0px 30px;
         }
+    }
+
+    .cifras-titulo, .servicios-titulo{
+        color:$color-negro;
     }
     .decoration{
         top: 120px;
@@ -157,13 +152,13 @@ grid-column-gap: 15px;
 grid-row-gap: 15px;
 margin: auto;
 margin-bottom: 50px;
-        max-width: 630px;
+        max-width: 693px;
     }
 
  
     .value{
         font-family: $titulo-serif;
-        font-size: 54px;
+        font-size: $size-numeros;
         color: $color-primario;
         border-bottom: 1px solid $otro-negro;
         }
@@ -172,44 +167,47 @@ margin-bottom: 50px;
         font-family: $texto-normal;
         font-weight: bold;
         color: $otro-negro;
-        font-size: 16px;
+        font-size: $size-textonormal;
         margin: 16px 0px 0px;
         }
   
 
         //MEDIA QUERIES -puntos de corte
-       
+        @media screen and (max-width: 951px){
+            #menu{
+                display:none;
+            }
+            header{
+                color: $otro-negro;
+                h1{
+                    font-size: 48px;
+                  }            
+            }
+            h2{
+            font-size: 34px;
+            }
+            h3{
+            font-size: 25px;   
+            }
+            p{
+            font-size:14px;
+            }
+            .decoration{
+                top:100px;
+            }
+            .value{
+            font-size: 35px;
+            }    
+            a{
+            font-size: 14px;
+            }
 
-  /* On screens that are 600px wide or less */
-  @media screen and (max-width: 600px) {
-    nav{
-        display:none;
-    }
-    header{
-        color: $otro-negro;
-        h1{
-            font-size: 40px;
-          }            
-    }
-    h2{
-    font-size: 32px;
-    }
-    h3{
-    font-size: 25px;   
-    }
-    p{
-    font-size:14px;
-    }
-    .decoration{
-        top:100px;
-    }
-    .value{
-    font-size: 35px;
-    }
-   
-}
+        }       
+
+  /* On screens that are 690px wide or less */
+
   
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 950px) {
     /*NOTICIAS*/   
         
         .container > div:nth-child(2){
@@ -227,7 +225,10 @@ margin-bottom: 50px;
         p{
             line-height: 25px;
         }
-    
+        
+    /*NUESTROS SERVICIOS responsive*/
+   
+
      }
 
      
@@ -238,25 +239,148 @@ margin-bottom: 50px;
     }
     
     .container{
-        max-width: 850px;
+        max-width: $max-width;
         display: flex;
         flex-direction: column;
+   
+    }
+
+    .container div:nth-child(2){
+        margin: auto;
     }
     
     .container img{
     width:100%;
-    max-width: 590px;
+    max-width: 690px;
     }
 
-    //mas inforación
+    //mas información (BOTÓN)
     .masInfo{
+        .negro{
+            color:$color-negro;
+        }
         a{
             font-family: $texto-normal;
-            font-size: 12px;
+            font-size: $size-textonormal;
             color: $color-blanco;
             padding: 5px 0px;
+            background-image: linear-gradient(currentColor, currentColor);
+            background-position: 0% 100%;
+            background-repeat: no-repeat;
+            background-size: 0% 2px;
+            transition: background-size .3s;
+            color: $color-blanco;
             img{
                 width: 14px;
             }
         }
+        a:hover, a:focus {
+            background-size: 100% 2px;
+        }
     }
+
+//NUESTROS SERVICIOS
+
+.container-servicios{
+    max-width: $max-width;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.container-servicios img{
+width:100%;
+max-width: 689px;
+}
+
+
+    article{
+        margin: 10px 0px;
+            img{
+            max-height: 250px;
+            max-width:590px;
+            object-fit: cover;
+             }
+
+            h4{
+            margin: 5px 0px;
+            color: $color-negro;
+             }
+            div {
+            margin-top: 5px;
+            a{
+                padding: 5px 0px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 690px) {
+        .container-servicios{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 25px;
+            grid-row-gap: 0px;
+        } 
+    }
+ //FOOTER
+
+
+ .logo-footer{
+    font-family: $titulo-serif;
+    font-size:30px;
+    padding: 10px;
+ }
+
+ 
+ .contenido div{
+    padding: 10px;
+ }
+
+footer{
+    
+a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Arial';
+    font-weight: bold;
+    font-size: 17px;
+ }
+
+ li a{
+    font-family: $texto-normal;
+    font-size: $size-textonormal;
+    font-weight: 100;
+ }
+
+ li{
+    font-family:$texto-normal;
+    margin: 10px 0px;
+ }
+
+ ul{
+    list-style: none;
+ }
+
+
+}
+
+ @media screen and (min-width: 690px){
+.footer{
+    max-width: $max-width;
+    margin: auto;
+}
+
+.contenido{
+    display:flex;
+    justify-content: space-around;
+}
+
+.contenido div{
+    flex: 1;
+    margin:0px 5px;
+}
+
+ }
