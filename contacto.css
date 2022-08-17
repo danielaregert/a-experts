@@ -17,9 +17,10 @@ margin: auto;
     background-color: white;
     padding: 55px;
     color: #2b2c2c;
-    min-width: 500px;
+   
 
 }
+
 
 input[type=text], textarea,
 input[type=text]:focus, textarea:focus{
@@ -60,4 +61,8 @@ form{
         display: flex;
         justify-content: flex-end;
     }
+
+    .container-c > div{
+        min-width: 500px;
+        }
 }

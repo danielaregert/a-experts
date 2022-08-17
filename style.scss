@@ -49,8 +49,6 @@ $max-width: 1050px;
 h2{
     font-family: $titulo-serif;
     font-size: $size-h2;
-    margin-bottom: 35px;
-
 }
 
 h3{
@@ -116,12 +114,12 @@ text-decoration: none;
 
 
 //SECTIONS
-section{
+
+
+.container-mw{
     margin:auto;        
         max-width: $max-width;
         padding: 60px 5px 60px 5px;
-        position:relative;
-  
 }
 
 //CIFRAS  
@@ -134,12 +132,14 @@ section{
     .cifras-titulo, .servicios-titulo{
         color:$color-negro;
     }
+
+
+
     .decoration{
-        top: 120px;
         width: 70px;
-        background-color: $color-primario;
-        position: absolute;
         height: 7px;
+        background-color: $color-primario;
+        margin-bottom: 35px;
         }
     
 //TABLA CIFRAS
@@ -178,11 +178,13 @@ margin-bottom: 50px;
                 display:none;
             }
             header{
-                color: $otro-negro;
-                h1{
-                    font-size: 48px;
-                  }            
+                color: $otro-negro;          
             }
+
+            .titulo h1{
+                font-size: 48px;
+              }  
+
             h2{
             font-size: 34px;
             }
@@ -210,12 +212,14 @@ margin-bottom: 50px;
 @media screen and (min-width: 950px) {
     /*NOTICIAS*/   
         
-        .container > div:nth-child(2){
+
+
+        .container > div:nth-child(1){
             order: 4;
             margin: auto;
-        }
+          }
     
-        .container > div:nth-child(3){
+        .container > div:nth-child(2){
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             margin-bottom: 25px;
@@ -245,14 +249,11 @@ margin-bottom: 50px;
    
     }
 
-    .container div:nth-child(2){
+    .container div:nth-child(1){
         margin: auto;
     }
     
-    .container img{
-    width:100%;
-    max-width: 690px;
-    }
+    
 
     //mas información (BOTÓN)
     .masInfo{
@@ -290,7 +291,7 @@ margin-bottom: 50px;
 
 
 
-.container-servicios img{
+.container-servicios img, .news-img img{
 width:100%;
 max-width: 689px;
 }

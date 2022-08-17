@@ -46,7 +46,6 @@ $max-width: 1050px;
 h2{
     font-family: $titulo-serif;
     font-size: $size-h2;
-    margin-bottom: 35px;
 
 }
 
@@ -75,6 +74,31 @@ text-decoration: none;
 /// HEADER de las secciones
 /// 
 
+
+//logo del header
+.logo-header{
+    font-family: $titulo-serif;
+    font-weight: 900;
+    padding: 12px;
+
+  a{
+    color: $color-primario;
+    font-size: 32pt;
+    font-style: $texto-normal;
+  }
+}
+
+//barra del header con logo
+.sobre-nosotros > div:nth-child(1){
+    width:100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #ccc;
+}
+
+
+
+//configuración del header
 .header-seccion{
     height: 354px;
     padding: 0px 0px 16px;
@@ -82,6 +106,26 @@ text-decoration: none;
     background-size: cover;
 }
 
+//contenedor del header con background
+.seccion-container{
+    max-width: $max-width;
+    margin:auto;
+    padding: 88px 0px;
+}
+
+.servicios-titulo{
+    h1{
+        font-family: $titulo-serif;
+        font-size: $size-h2;
+    }
+    p{
+        font-family: $subtitulo;
+        font-size: $size-h4;
+    }
+}
+
+
+//puntos de cort del header
 @media screen and (max-width: 951px){
     #menu-2{
         display:none;
@@ -93,15 +137,45 @@ text-decoration: none;
     }
 }
 
+//contenedor del quienes somos
+.container-quienes{
+    padding: 40px;
+}
+.container-quienes div:nth-child(1){
+    margin: auto;
+}
 
-.logo-header{
-    font-family: $titulo-serif;
-    font-weight: 900;
-    padding: 12px;
-    border-bottom: 1px solid #ccc;
-  a{
-    color: $color-primario;
-    font-size: 32pt;
-    font-style: $texto-normal;
-  }
+.cuerpo > img{
+    max-width: 504px;
+    max-height: 333px;
+    object-fit: cover;
+    margin: 0px 30px;
+}
+
+.cuerpo{
+    display: flex;
+    p{  
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 951px){
+.container-quienes{
+padding: 0;
+p{
+    font-size: 16px;
+}
+}
+}
+
+.background-blue{
+    background-color: $color-primario;
+    color: white;
+}
+
+.resaltado{
+    h3{
+        font-size: 24px;
+        padding: 10px;
+    }
 }

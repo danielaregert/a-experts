@@ -25,27 +25,28 @@
 <nav id="menu">
     <!-- start menu -->
     <ul>
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Sobre nosotros</a>
+      <li><a href="inicio.html">Inicio</a></li>
+      <li><a href="sobre-nosotros.html">Sobre nosotros</a>
         <!-- start menu desplegable -->
-        <ul>
+            <ul>
             <li><a href="#">¿Quiénes somos?</a></li>
-            <li><a href="#">Testimonios</a></li>
-          <li><a href="#">Precios</a></li>
-          <li><a href="#">Preguntas frecuentes</a>
-      </li> 
-        </ul>
+            <li><a href="#">Nuestros clientes</a></li>
+            <li><a href="#">Prensa</a></li>
+            <li><a href="#">Trabajos</a></li>
+            <li><a href="#">Preguntas frecuentes</a>
+            </li> 
+            </ul>
         <!-- end menu desplegable -->
       </li>
       <li><a href="#">Artistas</a>
       <li><a href="#">Nuestros servicios</a>
         <!-- start menu desplegable -->
-        <ul>
-          <li><a href="#">Ciencia y forense</a></li>
-       
+            <ul>
+            <li><a href="#">Ciencia y forense</a></li>
             <li><a href="#">Venta</a></li>
             <li><a href="#">Valoración</a></li>
-            <li><a href="#">Autenticación</a>
+            <li><a href="#">Autenticación</a></li>
+        
                 <!-- start menu desplegable -->
                 <ul>
                     <li><a href="#">Certificación COA</a></li>
@@ -75,9 +76,11 @@
     </header>
     <main>
 <!-- SECCIÓN DE NÚMEROS -->
-        <section class="cifras"><div class="decoration"></div>
+        <section class="cifras">
+            <div class="container-mw">
             <div class="cifras-titulo">
             <h2>Art Experts en cifras</h2></div>
+            <div class="decoration"></div>
                 
            <div class="tabla">
             <div>
@@ -98,13 +101,20 @@
             </div>
            </div> 
            <p> <small> Actualizado el 13-8-2022 </small></p>
+        </div>
              </section>
 <!-- Novedades -->
              <div class="background">
-                <section><div class="decoration"></div>
-                    <div class="container">
-                        <div><h2>Últimas novedades</h2></div>
-                        <div><img src="img/arte/rufino-tamayo-mural-ilu.jpg" alt="Cuadro de Rufino"></div>
+            
+                <section>
+                    <div class="container-mw">
+                           <div>
+                            <h2>Últimas novedades</h2>
+                            <div class="decoration"></div>
+                        </div>
+
+                        <div class="container">
+                        <div class="news-img"><img src="img/arte/rufino-tamayo-mural-ilu.jpg" alt="Cuadro de Rufino"></div>
                         <div>
                             <div>
                             <h3>Un cuadro de Rufino Tamayo fue valuado en $7.000.000</h3>
@@ -113,17 +123,22 @@
                             <p><p>Una pintura de <b>Rufino Tamayo</b> de 1942, Perro aullando a la luna, estimada en hasta 7 mdd, podría batir el récord para el artista en subastas la semana próxima en Nueva York, y quizás para el <b>arte latinoamericano</b> en subastas en general. </p><br>
                             <div class="masInfo"> <a href="#">Más información <img src="/img/web/arrow-right.png" alt="flecha a la izquierda"></a></div>
                         </div>
+                    </div>
                         </div>
                      
                     </div>
+                </div>
                 </section>
             </div>
     
 <!-- NUESTROS SERVICIOS -->
             <section>
+                <div class="container-mw">
                <div class="servicios-titulo">
-                <h2>Nuestros servicios</h2></div>
+                <div><h2>Nuestros servicios</h2></div>
                 <div class="decoration"></div>
+            </div>
+                
                 <div class="container-servicios">
                 <article>
                     <img src="img/arte/antonio-segui-cc.jpg" alt="Pintura de antonio segui"> 
@@ -151,13 +166,14 @@
                     <div class="masInfo"><a class="negro" href="">Más información <img src="/img/web/arrow-right.png" alt="flecha a la izquierda"></a></div>
                 </article>
                 </div>
-           
+            </div>
             </section>
 
 <!-- Contacto -->
 
             <div class="background-contacto">
                 <section>
+                    <div class="container-mw">
                 <div class="container-c">
                     <div>
                             <form action="#" id="formulario" method="get">
@@ -170,15 +186,15 @@
                                     </div>
                                     <div class="nombre">
                                         <label for="nombre"><b> Nombre y apellidos</b> <br></label>
-                                            <input type="text" name="nombre" id="nombre" value="Nombre">
+                                            <input type="text" name="nombre" id="nombre" placeholder="Nombre">
                                     </div>
                                     <div class="email">
                                         <label for="mail"> <b> E-mail </b> <br> </label>
-                                            <input type="text" name="email" id="email" value="E-mail">
+                                            <input type="text" name="email" id="email" placeholder="E-mail">
                                     </div>
                                     <div>
                                         <label for="mensaje"><b> Mensaje </b> </label>
-                                            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                                            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Su mensaje"></textarea>
                                     </div>
                                 </div >
                                
@@ -190,6 +206,7 @@
             
                         </div>
                     </div>
+                </div>
                 </section>
             </div>
 

@@ -186,7 +186,6 @@
 h2 {
   font-family: "Clearface", sans-serif;
   font-size: 51px;
-  margin-bottom: 35px;
 }
 
 h3 {
@@ -207,11 +206,44 @@ a {
   text-decoration: none;
 }
 
+.logo-header {
+  font-family: "Clearface", sans-serif;
+  font-weight: 900;
+  padding: 12px;
+}
+.logo-header a {
+  color: #6E98AA;
+  font-size: 32pt;
+  font-style: "Arial", sans-serif;
+}
+
+.sobre-nosotros > div:nth-child(1) {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #ccc;
+}
+
 .header-seccion {
   height: 354px;
   padding: 0px 0px 16px;
   background-image: url("img/arte/Perros_en_trailla-header2.jpg");
   background-size: cover;
+}
+
+.seccion-container {
+  max-width: 1050px;
+  margin: auto;
+  padding: 88px 0px;
+}
+
+.servicios-titulo h1 {
+  font-family: "Clearface", sans-serif;
+  font-size: 51px;
+}
+.servicios-titulo p {
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
 }
 
 @media screen and (max-width: 951px) {
@@ -222,16 +254,41 @@ a {
     display: none;
   }
 }
-.logo-header {
-  font-family: "Clearface", sans-serif;
-  font-weight: 900;
-  padding: 12px;
-  border-bottom: 1px solid #ccc;
+.container-quienes div:nth-child(1) {
+  margin: auto;
 }
-.logo-header a {
-  color: #6E98AA;
-  font-size: 32pt;
-  font-style: "Arial", sans-serif;
+
+.cuerpo > img {
+  max-width: 504px;
+  max-height: 333px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0px 30px;
+}
+
+.cuerpo {
+  display: flex;
+}
+.cuerpo p {
+  text-align: justify;
+}
+
+@media screen and (max-width: 951px) {
+  .container-quienes {
+    padding: 0;
+  }
+  .container-quienes p {
+    font-size: 16px;
+  }
+}
+.background-blue {
+  background-color: #6E98AA;
+  color: white;
+}
+
+.resaltado h3 {
+  font-size: 24px;
+  padding: 10px;
 }
 
 @font-face {
@@ -253,7 +310,6 @@ a {
 h2 {
   font-family: "Clearface", sans-serif;
   font-size: 51px;
-  margin-bottom: 35px;
 }
 
 h3 {
@@ -309,11 +365,10 @@ a {
   font-style: "Arial", sans-serif;
 }
 
-section {
+.container-mw {
   margin: auto;
   max-width: 1050px;
   padding: 60px 5px 60px 5px;
-  position: relative;
 }
 
 .cifras small {
@@ -325,11 +380,10 @@ section {
 }
 
 .decoration {
-  top: 120px;
   width: 70px;
-  background-color: #6E98AA;
-  position: absolute;
   height: 7px;
+  background-color: #6E98AA;
+  margin-bottom: 35px;
 }
 
 .tabla {
@@ -365,7 +419,7 @@ section {
   header {
     color: #605E5E;
   }
-  header h1 {
+  .titulo h1 {
     font-size: 48px;
   }
   h2 {
@@ -390,11 +444,11 @@ section {
 /* On screens that are 690px wide or less */
 @media screen and (min-width: 950px) {
   /*NOTICIAS*/
-  .container > div:nth-child(2) {
+  .container > div:nth-child(1) {
     order: 4;
     margin: auto;
   }
-  .container > div:nth-child(3) {
+  .container > div:nth-child(2) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 25px;
@@ -416,13 +470,8 @@ section {
   flex-direction: column;
 }
 
-.container div:nth-child(2) {
+.container div:nth-child(1) {
   margin: auto;
-}
-
-.container img {
-  width: 100%;
-  max-width: 690px;
 }
 
 .masInfo .negro {
@@ -453,7 +502,7 @@ section {
   flex-direction: column;
 }
 
-.container-servicios img {
+.container-servicios img, .news-img img {
   width: 100%;
   max-width: 689px;
 }

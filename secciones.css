@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "Clearface";
+  src: url("/fonts/ITC-Clearface-Std-Heavy.otf");
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/Poppins-Regular.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-family: "Clearface", sans-serif;
+  font-size: 51px;
+}
+
+h3 {
+  font-family: "Clearface", sans-serif;
+  font-size: 38px;
+}
+
+h4 {
+  font-family: "Clearface", sans-serif;
+  font-size: 28px;
+}
+
+p {
+  font-family: "Arial", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo-header {
+  font-family: "Clearface", sans-serif;
+  font-weight: 900;
+  padding: 12px;
+}
+.logo-header a {
+  color: #6E98AA;
+  font-size: 32pt;
+  font-style: "Arial", sans-serif;
+}
+
+.sobre-nosotros > div:nth-child(1) {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.header-seccion {
+  height: 354px;
+  padding: 0px 0px 16px;
+  background-image: url("img/arte/Perros_en_trailla-header2.jpg");
+  background-size: cover;
+}
+
+.seccion-container {
+  max-width: 1050px;
+  margin: auto;
+  padding: 88px 0px;
+}
+
+.servicios-titulo h1 {
+  font-family: "Clearface", sans-serif;
+  font-size: 51px;
+}
+.servicios-titulo p {
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+}
+
+@media screen and (max-width: 951px) {
+  #menu-2 {
+    display: none;
+  }
+  .logo-header {
+    display: none;
+  }
+}
+.container-quienes div:nth-child(1) {
+  margin: auto;
+}
+
+.cuerpo > img {
+  max-width: 504px;
+  max-height: 333px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0px 30px;
+}
+
+.cuerpo {
+  display: flex;
+}
+.cuerpo p {
+  text-align: justify;
+}
+
+@media screen and (max-width: 951px) {
+  .container-quienes {
+    padding: 0;
+  }
+  .container-quienes p {
+    font-size: 16px;
+  }
+}
+.background-blue {
+  background-color: #6E98AA;
+  color: white;
+}
+
+.resaltado h3 {
+  font-size: 24px;
+  padding: 10px;
+}/*# sourceMappingURL=secciones.css.map */
