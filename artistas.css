@@ -28,13 +28,21 @@ font-family: 'Arial';
 
 button.btn-artist {
 padding: 6px;
-margin: 0px 2px;
 height: 40px;
 width: 40px;
+border: 0;
 }
+
+button.btn-artist:hover {
+    padding: 6px;
+    height: 40px;
+    width: 40px;
+    border: 0;
+    background-color: #ccc;
+    }
+
 .search >input[type=text]{
     padding: 10px;
-    margin:6.4px;
     height: 40px;
     }
     
@@ -54,8 +62,13 @@ width: 40px;
 /*grid*/
 
 .search input[type="text"]{
-width: 250px;
 background-color: #ccc;
+width: 100%;
+padding: 15px;
+border:0;
+background-color: rgb(236, 236, 236);
+outline: none;
+margin:5px 0px;
 }
 
 .artistas-img{
@@ -68,9 +81,9 @@ background-color: #ccc;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 20px;
-    grid-row-gap: 10px;
+    grid-row-gap: 30px;
 }
 
 
@@ -83,10 +96,15 @@ background-color: #ccc;
 .numbers{
     display: flex;
     justify-content: space-around;
+    font-family: 'Arial';
 }
 
 .numbers div{
     margin: 10px;
+}
+
+.numbers a:hover, .numbers a:visited{
+    color: #605E5E;
 }
 
 .lo-sentimos-container{
@@ -109,18 +127,15 @@ padding-bottom: 50px;
     }
 
     .artist-mw{
-        background-color: red;
         justify-content: flex-start;
     }
 
  
 .search input[type="text"]{
     width: 100%;
-    background-color: violet;
     }
     
     .search{
-        background-color: yellow;
         width:100%;
     }
 }
@@ -132,3 +147,17 @@ max-width: 247px;
 max-height: 200px;
 object-fit: cover;
 }
+
+/*date*/
+.date{
+    font-family: 'Arial';
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/*artista decoration*/
+.decoration{
+    width: 70px;
+    height: 7px;
+    margin-bottom: 20px;
+    }

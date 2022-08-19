@@ -101,8 +101,7 @@ text-decoration: none;
 //configuración del header
 .header-seccion{
     height: 354px;
-    padding: 0px 0px 16px;
-    background-image:url('img/arte/Perros_en_trailla-header2.jpg') ;
+    background-image:url('img/arte/pablo\ picasso.jpg') ;
     background-size: cover;
 }
 
@@ -118,6 +117,7 @@ text-decoration: none;
 margin-top: 60px;
    display: flex;
    flex-direction: column;
+   color:$color-blanco;
 }
 
 .servicios-titulo{
@@ -160,9 +160,13 @@ margin-top: 60px;
 }
 
 .cuerpo{
-    display: flex;
-    p{  
+     p{  
         text-align: justify;
+    }
+    ul{
+        font-family: $texto-normal;
+        line-height: 24px;
+        list-style: none;
     }
 }
 
@@ -197,12 +201,29 @@ p{
 
 .subseccion-header-1{
     height: 93px;
+    background-image: url(/img/arte/pablo\ picasso.jpg);
 }
 
 .index-container{
+  height: 100%;
     padding: 20px;
     max-width: $max-width;
     margin: auto;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+ justify-content: center;
+}
+
+.container-mw-subseccion{
+    max-width: $max-width;
+    margin: auto;
+    padding: 20px 0px 50px 0px;
+    p{
+    text-align: justify;
+    }
+}
+
+.subseccion-menu{
+    margin: 20px 0px;
+    font-family: $texto-normal;
 }

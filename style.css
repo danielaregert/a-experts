@@ -68,8 +68,7 @@ a {
 
 .header-seccion {
   height: 354px;
-  padding: 0px 0px 16px;
-  background-image: url("img/arte/Perros_en_trailla-header2.jpg");
+  background-image: url("img/arte/pablo picasso.jpg");
   background-size: cover;
 }
 
@@ -83,6 +82,7 @@ a {
   margin-top: 60px;
   display: flex;
   flex-direction: column;
+  color: #FFF;
 }
 
 .servicios-titulo h1 {
@@ -118,11 +118,13 @@ a {
   margin: 0px 30px;
 }
 
-.cuerpo {
-  display: flex;
-}
 .cuerpo p {
   text-align: justify;
+}
+.cuerpo ul {
+  font-family: "Arial", sans-serif;
+  line-height: 24px;
+  list-style: none;
 }
 
 @media screen and (max-width: 951px) {
@@ -149,14 +151,31 @@ a {
 
 .subseccion-header-1 {
   height: 93px;
+  background-image: url(/img/arte/pablo\ picasso.jpg);
 }
 
 .index-container {
+  height: 100%;
   padding: 20px;
   max-width: 1050px;
   margin: auto;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-mw-subseccion {
+  max-width: 1050px;
+  margin: auto;
+  padding: 20px 0px 50px 0px;
+}
+.container-mw-subseccion p {
+  text-align: justify;
+}
+
+.subseccion-menu {
+  margin: 20px 0px;
+  font-family: "Arial", sans-serif;
 }
 
 @font-face {
@@ -297,10 +316,8 @@ a {
     font-size: 25px;
   }
   p {
-    font-size: 14px;
-  }
-  .decoration {
-    top: 100px;
+    font-size: 16px;
+    line-height: 20px;
   }
   .value {
     font-size: 35px;
