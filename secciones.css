@@ -85,6 +85,10 @@ a {
     display: none;
   }
 }
+.container-quienes {
+  padding: 40px;
+}
+
 .container-quienes div:nth-child(1) {
   margin: auto;
 }

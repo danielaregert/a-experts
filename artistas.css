@@ -1,0 +1,89 @@
+.container-i{
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 30px;
+
+}
+
+
+.artist-mw{
+    max-width: 1050px;
+    margin: auto;
+    display: flex;
+    padding: 10px 0px;
+    justify-content: space-between;
+
+}
+
+.artist-mw div{
+    padding:10px 0px;
+    display: flex;
+}
+
+.abc ul{
+list-style: none;
+display: flex;
+font-family: 'Arial';
+}
+
+button.btn-artist {
+padding: 6px;
+margin: 0px 2px;
+}
+.search input[type=text]{
+    padding: 10px;
+    margin:6.4px;
+    }
+    
+
+.abc ul li{
+    margin: 6.4px;
+}
+.abc ul li a{
+    color:black;
+}
+
+
+/*grid*/
+
+
+.dos input[type="text"]{
+width: 250px;
+padding: 5px;
+}
+
+.artistas-img{
+    height: 200px;
+    background-color: blue;
+}
+
+.artistas-grid{
+    max-width: 1050px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+}
+
+
+.artistas-page{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.numbers{
+    display: flex;
+    justify-content: space-around;
+}
+
+.numbers div{
+    margin: 10px;
+}
+
+.lo-sentimos-container{
+max-width: 1050px;
+margin: auto;
+padding-bottom: 50px;
+}
