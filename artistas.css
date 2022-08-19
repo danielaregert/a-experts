@@ -22,16 +22,20 @@
 .abc ul{
 list-style: none;
 display: flex;
+align-items: center;
 font-family: 'Arial';
 }
 
 button.btn-artist {
 padding: 6px;
 margin: 0px 2px;
+height: 40px;
+width: 40px;
 }
-.search input[type=text]{
+.search >input[type=text]{
     padding: 10px;
     margin:6.4px;
+    height: 40px;
     }
     
 
@@ -42,13 +46,16 @@ margin: 0px 2px;
     color:black;
 }
 
+.search{
+    display: flex;
+    align-items: center;
+}
 
 /*grid*/
 
-
-.dos input[type="text"]{
+.search input[type="text"]{
 width: 250px;
-padding: 5px;
+background-color: #ccc;
 }
 
 .artistas-img{
@@ -86,4 +93,42 @@ padding: 5px;
 max-width: 1050px;
 margin: auto;
 padding-bottom: 50px;
+}
+
+
+@media screen and (max-width: 951px){
+    .abc ul{
+        display: none;
+    }
+
+    .artistas-grid{
+        display: flex;
+        flex-wrap: wrap;
+
+    
+    }
+
+    .artist-mw{
+        background-color: red;
+        justify-content: flex-start;
+    }
+
+ 
+.search input[type="text"]{
+    width: 100%;
+    background-color: violet;
+    }
+    
+    .search{
+        background-color: yellow;
+        width:100%;
+    }
+}
+
+/*la imagen*/
+.grid-figure img{
+    width: 100%;
+max-width: 247px;
+max-height: 200px;
+object-fit: cover;
 }
