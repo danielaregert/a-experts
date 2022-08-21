@@ -153,14 +153,13 @@ margin-top: 60px;
 }
 
 .cuerpo > img{
-    max-width: 504px;
-    max-height: 333px;
+    width: 100%;
+    max-height: 250px;
     object-fit: cover;
-    margin: 0px 30px;
 }
 
 .cuerpo{
-     p{  
+     p{ 
         text-align: justify;
     }
     ul{
@@ -171,12 +170,21 @@ margin-top: 60px;
 }
 
 @media screen and (max-width: 951px){
+
+    //subseccion artistas responsive
+
+
 .container-quienes{
 padding: 0;
 p{
     font-size: 16px;
 }
 }
+
+.cuerpo{
+    padding: 0px 10px;
+}
+
 }
 
 .background-blue{
@@ -200,7 +208,7 @@ p{
 //SUBSECCIONES
 
 .subseccion-header-1{
-    height: 93px;
+    height: 200px;
     background-image: url(/img/arte/pablo\ picasso.jpg);
 }
 
@@ -226,4 +234,54 @@ p{
 .subseccion-menu{
     margin: 20px 0px;
     font-family: $texto-normal;
+}
+
+//VENTA
+.venta-grid{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.venta-grid article{
+    flex: 50%;
+    padding: 5px;
+    h4{
+        font-family: $texto-normal;
+        font-size: 16px;
+    }
+    p{
+        font-size: 14px;
+        text-align: justify;
+    }
+}
+
+//leer más
+
+.leermas{
+    margin: 30px 0px 0px;
+}
+.leermas div:nth-child(1){
+    display: flex;
+    align-items: center;
+    img{
+        width: 15px;
+        height: 16px;
+    }
+}
+
+.leermas ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: inside;
+    color: $otro-negro;
+    margin-left: 10px;
+}
+
+.leermas ul li{
+    flex: 50%;
+}
+.leermas ul li a{
+    color: $otro-negro;
 }

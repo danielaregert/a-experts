@@ -67,3 +67,11 @@ form{
         min-width: 500px;
         }
 }
+
+/*iconos vertical*/
+.icons-vertical{
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+    align-items: center;
+}
