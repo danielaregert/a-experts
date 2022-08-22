@@ -165,6 +165,10 @@ a {
 .container-mw-subseccion p {
   text-align: justify;
 }
+.container-mw-subseccion h1 {
+  font-family: "Clearface", sans-serif;
+  font-size: 30px;
+}
 
 .subseccion-menu {
   margin: 20px 0px;
@@ -234,6 +238,37 @@ a {
 }
 .lo-que ul li span {
   color: #2b2c2c;
+}
+
+.leermas-ciencia {
+  margin: 30px 0px 0px;
+}
+
+.leermas-ciencia div:nth-child(1) {
+  display: flex;
+  align-items: center;
+}
+.leermas-ciencia div:nth-child(1) img {
+  width: 15px;
+  height: 16px;
+}
+
+.leermas-ciencia > ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: inside;
+  color: #605E5E;
+  margin-left: 10px;
+}
+
+.leermas-ciencia > ul li {
+  padding: 0px 10px;
+}
+
+.leermas-ciencia ul li a {
+  color: #605E5E;
 }
 
 @font-face {
