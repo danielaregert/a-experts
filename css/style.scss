@@ -1,4 +1,3 @@
-@use 'navbar';
 @use 'secciones';
 
 
@@ -336,7 +335,7 @@ max-width: 689px;
  }
 
  
- .contenido div{
+ .contenido > div{
     padding: 10px;
  }
 
@@ -358,20 +357,15 @@ a{
 
  li{
     font-family:$texto-normal;
-    margin: 10px 0px;
+    margin: 20px 0px;
+
  }
 
  ul{
     list-style: none;
+    padding: 10px;
  }
 
-.icons{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 0px;
-}
 }
 
  @media screen and (min-width: 690px){
@@ -388,9 +382,9 @@ a{
 .contenido div{
     flex: 1;
     margin:0px 5px;
+    }
 }
 
- }
 
  //artistas
  .logo-responsive{

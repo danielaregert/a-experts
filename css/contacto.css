@@ -1,5 +1,6 @@
 .background-contacto{
-    background-image: url('img/arte/jose-valenciana-art-experts.jpg');
+background-image: url('../img/arte/jose-valenciana-art-experts.jpg');
+/*background-color: #2b2c2c; */
     background-attachment: fixed;
     background-size:cover;
 }
@@ -63,15 +64,24 @@ form{
         justify-content: flex-end;
     }
 
-    .container-c > div{
+   /* .container-c > div{
         min-width: 500px;
-        }
+        }*/
 }
 
 /*iconos vertical*/
-.icons-vertical{
+
+
+
+.icons-contacto{
     display: flex;
-    justify-content: space-between;
-    background-color: aqua;
-    align-items: center;
+     flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+    padding: 10px;
+}
+
+.icons-contacto i, .icons-contacto iconify-icon{
+    padding: 10px;
+    color: #2b2c2c;
 }

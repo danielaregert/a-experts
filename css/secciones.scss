@@ -102,8 +102,8 @@ text-decoration: none;
 .header-seccion{
     padding-top:30px;
     height: 354px;
-    background-image:url('img/arte/pablo\ picasso.jpg') ;
-    background-size: cover;
+    background-image:url('../img/arte/pablo\ picasso.jpg') ;
+     background-size: cover;
 }
 
 //contenedor del header con background
@@ -283,7 +283,23 @@ p{
 
 .leermas ul li{
     flex: 50%;
+    padding: 0px 10px;
 }
 .leermas ul li a{
     color: $otro-negro;
+}
+
+.lo-que{
+    padding: 30px 0px;
+    ul{
+        list-style: inside;
+        font-family: $texto-normal;
+        color: $color-primario;
+        li{
+            margin: 8px;
+        }
+        li span{
+            color: $color-negro;
+        }
+        }
 }
