@@ -173,6 +173,10 @@ a {
 .subseccion-menu {
   margin: 20px 0px;
   font-family: "Arial", sans-serif;
+  color: #2b2c2c;
+}
+.subseccion-menu a {
+  color: #2b2c2c;
 }
 
 .venta-grid {

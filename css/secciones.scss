@@ -240,6 +240,11 @@ p{
 .subseccion-menu{
     margin: 20px 0px;
     font-family: $texto-normal;
+    color: $color-negro;
+
+    a{
+        color: $color-negro;
+    }
 }
 
 //VENTA
