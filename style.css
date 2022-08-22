@@ -67,6 +67,7 @@ a {
 }
 
 .header-seccion {
+  padding-top: 30px;
   height: 354px;
   background-image: url("img/arte/pablo picasso.jpg");
   background-size: cover;
@@ -152,8 +153,9 @@ a {
 }
 
 .subseccion-header-1 {
-  height: 200px;
+  height: 100px;
   background-image: url(/img/arte/pablo\ picasso.jpg);
+  padding: 10px;
 }
 
 .index-container {
@@ -521,5 +523,16 @@ footer .icons {
   .contenido div {
     flex: 1;
     margin: 0px 5px;
+  }
+}
+.logo-responsive {
+  color: #FFF;
+  font-size: 34px;
+  font-family: "Clearface", sans-serif;
+}
+
+@media screen and (min-width: 951px) {
+  .logo-responsive {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */

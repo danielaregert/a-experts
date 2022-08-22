@@ -293,6 +293,7 @@ margin-bottom: 50px;
 .container-servicios img, .news-img img{
 width:100%;
 max-width: 689px;
+
 }
 
 
@@ -392,3 +393,14 @@ a{
  }
 
  //artistas
+ .logo-responsive{
+    color: $color-blanco;
+    font-size: 34px;
+    font-family: $titulo-serif;
+   }
+
+   @media screen and (min-width: 951px){
+.logo-responsive{
+    display: none;
+}
+   }
