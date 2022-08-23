@@ -235,6 +235,10 @@ p{
         font-family: $titulo-serif;
         font-size: 30px;
     }
+    h2{
+        font-size: 25px;
+        margin: 10px 0px 0px;
+    }
 }
 
 .subseccion-menu{
@@ -343,4 +347,19 @@ p{
 }
 .leermas-ciencia ul li a{
     color: $otro-negro;
+}
+
+
+.ul-vender{
+    ul{
+        list-style: inside;
+        font-family: $texto-normal;
+        color: $color-primario;
+        li{
+            margin: 8px;
+        }
+        li span{
+            color: $color-negro;
+        }
+        }
 }

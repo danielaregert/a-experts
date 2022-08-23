@@ -169,6 +169,10 @@ a {
   font-family: "Clearface", sans-serif;
   font-size: 30px;
 }
+.container-mw-subseccion h2 {
+  font-size: 25px;
+  margin: 10px 0px 0px;
+}
 
 .subseccion-menu {
   margin: 20px 0px;
@@ -273,4 +277,16 @@ a {
 
 .leermas-ciencia ul li a {
   color: #605E5E;
+}
+
+.ul-vender ul {
+  list-style: inside;
+  font-family: "Arial", sans-serif;
+  color: #6E98AA;
+}
+.ul-vender ul li {
+  margin: 8px;
+}
+.ul-vender ul li span {
+  color: #2b2c2c;
 }/*# sourceMappingURL=secciones.css.map */
