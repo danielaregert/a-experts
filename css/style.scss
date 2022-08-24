@@ -351,12 +351,16 @@ max-width: 689px;
 
 footer{
     
-a{
+a, span{
     text-decoration: none;
     color: white;
     font-family: 'Arial';
+    font-size: $texto-normal;
     font-weight: bold;
-    font-size: 17px;
+ }
+
+ hr{
+    margin: 5px 0px 0px;
  }
 
  li a{
@@ -367,13 +371,12 @@ a{
 
  li{
     font-family:$texto-normal;
-    margin: 20px 0px;
+    margin: 15px 0px;
 
  }
 
  ul{
     list-style: none;
-    padding: 10px;
  }
 
 }

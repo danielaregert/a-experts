@@ -316,7 +316,10 @@ p{
 
 //lista de links
 .lo-que{
-    padding: 30px 0px;
+    padding: 0px 0px 15px;
+    h2{
+        margin:0;
+    }
     ul{
         list-style: inside;
         font-family: $texto-normal;
@@ -328,6 +331,11 @@ p{
             color: $color-negro;
         }
         }
+}
+
+//investigacion p
+.investigacion{
+    margin:10px 0px 15px;
 }
 
 //leer más - ciencia
@@ -375,3 +383,4 @@ p{
         }
         }
 }
+
